@@ -2,6 +2,9 @@
 @import "tailwindcss";
 @import './base.css';
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
 a,
 .green {
   text-decoration: none;
@@ -9,6 +12,16 @@ a,
   transition: 0.4s;
   padding: 3px;
 }
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
 
 @media (hover: hover) {
   a:hover {
