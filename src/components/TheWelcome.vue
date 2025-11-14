@@ -16,7 +16,7 @@
 
     <!-- HERO SECTION -->
     <section
-      class="relative flex flex-col md:flex-row min-h-screen bg-gradient-to-r from-white to-purple-200 overflow-hidden">
+      class="relative flex flex-col md:flex-row min-h-screen bg-gradient-to-r from-white to-purple-200 overflow-hidden pt-8 sm:pt-0">
       <!-- Left Section -->
       <div class="relative z-10 w-full md:w-1/2 flex flex-col justify-center px-6 sm:px-12 lg:px-20 py-28 md:py-0">
         <!-- Hero Text -->
@@ -25,7 +25,7 @@
             Rambut Sehat
           </span>
 
-          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-gray-900">
+          <h1 class="text-[37px] md:text-5xl font-extrabold leading-tight text-gray-900">
             Dapatkan Diagnosis Rambutmu,
             <br class="hidden sm:block" />
             Secara Instan Bersama
@@ -106,7 +106,7 @@
 
     <!-- TESTIMONI -->
     <section
-      class="py-16 sm:py-2 bg-gradient-to-b from-white to-blue-50 text-center flex items-center justify-center px-4">
+      class="pb-6 sm:py-2 bg-gradient-to-b from-white to-blue-50 text-center flex items-center justify-center px-4">
       <div class="max-w-4xl mx-auto space-y-6">
         <blockquote class="text-xl sm:text-2xl md:text-3xl italic text-gray-700 leading-relaxed">
           “Setelah pakai Thricho, aku bisa tahu penyebab rambut rontokku dalam
@@ -164,7 +164,7 @@
     </section>
 
     <!-- FAQ -->
-    <section class="py-16 sm:py-20 bg-white flex justify-center relative px-4">
+    <section class="py-4 sm:py-20 bg-white flex justify-center relative px-4">
       <div class="w-full max-w-3xl mx-auto text-center">
         <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
           Pertanyaan yang Sering Diajukan
@@ -229,18 +229,18 @@
 
     <!-- FOOTER -->
     <footer class="bg-gray-900 text-gray-300 pt-12 pb-6">
-      <div class="px-16">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10 items pb-4">
+      <div class="sm:px-16 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-10  pb-4">
 
           <!-- Brand -->
-          <div class="text-center sm:text-left">
+          <div class=" text-left">
             <h2 class="text-2xl font-semibold text-white">Thricho</h2>
             <p class="mt-3 text-sm text-gray-400">
               Teknologi analisis rambut untuk kesehatan kulit kepala Anda.
             </p>
 
             <!-- Social -->
-            <div class="flex justify-center sm:justify-start space-x-4 mt-4">
+            <div class="flex justify-start space-x-4 mt-4">
               <a href="#" class="hover:text-white transition">Instagram</a>
               <a href="#" class="hover:text-white transition">TikTok</a>
               <a href="#" class="hover:text-white transition">YouTube</a>
@@ -248,7 +248,7 @@
           </div>
 
           <!-- Menu -->
-          <div class="text-center sm:text-left">
+          <div class="text-left">
             <h3 class="text-white font-semibold text-lg"></h3>
             <ul class="mt-4 space-y-2 text-sm">
               <li><a href="#" class="hover:text-white transition">Beranda</a></li>
@@ -259,7 +259,7 @@
           </div>
 
           <!-- Contact -->
-          <div class="text-center sm:text-left">
+          <div class="text-left">
             <h3 class="text-white font-semibold text-lg">Kontak</h3>
             <ul class="mt-4 space-y-2 text-sm">
               <li>Email: support@thricho.com</li>
