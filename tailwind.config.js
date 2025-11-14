@@ -5,12 +5,12 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-        extend: {
-            fontFamily: {
-                inter: ['Inter', 'sans-serif'],
-                poppins: ['Poppins', 'sans-serif'],
-            },
-        },
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
+    },
+  },
   plugins: [],
 }
