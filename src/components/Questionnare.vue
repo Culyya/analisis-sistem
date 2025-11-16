@@ -274,9 +274,9 @@ const questions = [
         title: 'Apa jenis kelamin Anda?',
         description: 'Pilih opsi yang paling sesuai.',
         options: [
-            { label: 'Laki-laki', tag: 'Laki-laki', image: '/public/boy.png' },
-            { label: 'Perempuan', tag: 'Perempuan', image: '/public/girl.png' },
-            { label: 'Lainnya', tag: 'Lainnya', image: '/public/mewing.JPG' },
+            { label: 'Laki-laki', tag: 'Laki-laki', image: '../../public/boy.png' },
+            { label: 'Perempuan', tag: 'Perempuan', image: '../../public/girl.png' },
+            { label: 'Lainnya', tag: 'Lainnya', image: '../../public/mewing.JPG' },
         ],
     },
     {
@@ -298,9 +298,9 @@ const questions = [
         title: 'Apa jenis kulit kepala Anda?',
         description: 'Pilih yang paling sesuai dengan kondisi kulit kepala Anda.',
         options: [
-            { label: 'Berminyak', tag: 'Oily', image: '/public/berminyak.png' },
-            { label: 'Kering', tag: 'Dry', image: '/public/kering.png' },
-            { label: 'Normal', tag: 'Normal', image: '/public/normal.png' },
+            { label: 'Berminyak', tag: 'Oily', image: '../../public/berminyak.png' },
+            { label: 'Kering', tag: 'Dry', image: '../../public/kering.png' },
+            { label: 'Normal', tag: 'Normal', image: '../../public/normal.png' },
         ],
     },
     {
@@ -308,9 +308,9 @@ const questions = [
         title: 'Seberapa sering Anda keramas?',
         description: 'Frekuensi keramas mempengaruhi kondisi kulit kepala.',
         options: [
-            { label: 'Harian', tag: 'Daily', image: '/public/everyday.png' },
-            { label: '3-4x/minggu', tag: 'Regular', image: '/public/week.png' },
-            { label: '1-2x/minggu', tag: 'Rare', image: '/public/week.png' },
+            { label: 'Harian', tag: 'Daily', image: '../../public/everyday.png' },
+            { label: '3-4x/minggu', tag: 'Regular', image: '../../public/week.png' },
+            { label: '1-2x/minggu', tag: 'Rare', image: '../../public/week.png' },
         ],
     },
     {
@@ -318,9 +318,9 @@ const questions = [
         title: 'Apakah Anda memiliki alergi atau kondisi kulit?',
         description: 'Misal: psoriasis, eksim, atau alergi topikal.',
         options: [
-            { label: 'Ya, ada', tag: 'HasCondition', image: '/public/yes.png' },
-            { label: 'Tidak', tag: 'NoCondition', image: '/public/no.png' },
-            { label: 'Tidak yakin', tag: 'Unsure', image: '/public/no.png' },
+            { label: 'Ya, ada', tag: 'HasCondition', image: '../../public/yes.png' },
+            { label: 'Tidak', tag: 'NoCondition', image: '../../public/no.png' },
+            { label: 'Tidak yakin', tag: 'Unsure', image: '../../public/no.png' },
         ],
     },
 
@@ -330,9 +330,9 @@ const questions = [
         title: 'Apakah Anda mengalami ketombe?',
         description: 'Nampak serpihan putih atau putih kekuningan?',
         options: [
-            { label: 'Sering', tag: 'Dandruff_Yes', image: '/public/yes.png' },
-            { label: 'Kadang-kadang', tag: 'Dandruff_Sometimes', image: '/public/yes.png' },
-            { label: 'Tidak', tag: 'Dandruff_No', image: '/public/no.png' },
+            { label: 'Sering', tag: 'Dandruff_Yes', image: '../../public/yes.png' },
+            { label: 'Kadang-kadang', tag: 'Dandruff_Sometimes', image: '../../public/yes.png' },
+            { label: 'Tidak', tag: 'Dandruff_No', image: '../../public/no.png' },
         ],
     },
     {
@@ -340,9 +340,9 @@ const questions = [
         title: 'Apakah kulit kepala terasa gatal?',
         description: 'Rasa gatal yang mengganggu/berulang?',
         options: [
-            { label: 'Sering gatal', tag: 'Itchy_Often', image: '/public/dandruff.png' },
-            { label: 'Kadang', tag: 'Itchy_Sometimes', image: '/public/yes.png' },
-            { label: 'Tidak', tag: 'Itchy_No', image: '/public/no.png' },
+            { label: 'Sering gatal', tag: 'Itchy_Often', image: '../../public/dandruff.png' },
+            { label: 'Kadang', tag: 'Itchy_Sometimes', image: '../../public/yes.png' },
+            { label: 'Tidak', tag: 'Itchy_No', image: '../../public/no.png' },
         ],
     },
     {
@@ -350,9 +350,9 @@ const questions = [
         title: 'Bagaimana tekstur kulit kepala (kering/terkelupas)?',
         description: 'Kering, mengelupas, atau normal?',
         options: [
-            { label: 'Kering & terkelupas', tag: 'Scalp_Dry', image: '/public/kering.png' },
-            { label: 'Minyak berlebih', tag: 'Scalp_Oily', image: '/public/berminyak.png' },
-            { label: 'Normal', tag: 'Scalp_Normal', image: '/public/normal.png' },
+            { label: 'Kering & terkelupas', tag: 'Scalp_Dry', image: '../../public/kering.png' },
+            { label: 'Minyak berlebih', tag: 'Scalp_Oily', image: '../../public/berminyak.png' },
+            { label: 'Normal', tag: 'Scalp_Normal', image: '../../public/normal.png' },
         ],
     },
 
@@ -362,9 +362,9 @@ const questions = [
         title: 'Apakah ujung rambut Anda bercabang?',
         description: 'Cek ujung rambut apakah terbelah/rapuh.',
         options: [
-            { label: 'Banyak bercabang', tag: 'Split_High', image: '/public/hair-care.png' },
-            { label: 'Sedikit', tag: 'Split_Low', image: '/public/yes.png' },
-            { label: 'Tidak', tag: 'Split_No', image: '/public/no.png' },
+            { label: 'Banyak bercabang', tag: 'Split_High', image: '../../public/hair-care.png' },
+            { label: 'Sedikit', tag: 'Split_Low', image: '../../public/yes.png' },
+            { label: 'Tidak', tag: 'Split_No', image: '../../public/no.png' },
         ],
     },
     {
@@ -372,9 +372,9 @@ const questions = [
         title: 'Seberapa kusam rambut Anda?',
         description: 'Apakah rambut terlihat kurang bercahaya?',
         options: [
-            { label: 'Sangat kusam', tag: 'Dull_High', image: '/public/berminyak.png' },
-            { label: 'Agak kusam', tag: 'Dull_Mid', image: '/public/hair-care.png' },
-            { label: 'Berkilau', tag: 'Dull_No', image: '/public/kering.png' },
+            { label: 'Sangat kusam', tag: 'Dull_High', image: '../../public/berminyak.png' },
+            { label: 'Agak kusam', tag: 'Dull_Mid', image: '../../public/hair-care.png' },
+            { label: 'Berkilau', tag: 'Dull_No', image: '../../public/kering.png' },
         ],
     },
     {
@@ -382,9 +382,9 @@ const questions = [
         title: 'Apakah rambut mudah patah saat disisir?',
         description: 'Rambut rapuh ketika disisir atau ditarik ringan?',
         options: [
-            { label: 'Sering patah', tag: 'Break_High', image: '/public/dandruff.png' },
-            { label: 'Kadang', tag: 'Break_Mid', image: '/public/yes.png' },
-            { label: 'Jarang', tag: 'Break_No', image: '/public/no.png' },
+            { label: 'Sering patah', tag: 'Break_High', image: '../../public/dandruff.png' },
+            { label: 'Kadang', tag: 'Break_Mid', image: '../../public/yes.png' },
+            { label: 'Jarang', tag: 'Break_No', image: '../../public/no.png' },
         ],
     },
 
@@ -394,9 +394,9 @@ const questions = [
         title: 'Seberapa sering Anda memakai alat panas (catok/dryer)?',
         description: 'Penggunaan alat panas berpengaruh besar pada kerusakan.',
         options: [
-            { label: 'Harian', tag: 'Heat_Daily', image: '/public/everyday.png' },
-            { label: 'Beberapa kali seminggu', tag: 'Heat_Weekly', image: '/public/week.png' },
-            { label: 'Jarang', tag: 'Heat_Rare', image: '/public/normal.png' },
+            { label: 'Harian', tag: 'Heat_Daily', image: '../../public/everyday.png' },
+            { label: 'Beberapa kali seminggu', tag: 'Heat_Weekly', image: '../../public/week.png' },
+            { label: 'Jarang', tag: 'Heat_Rare', image: '../../public/normal.png' },
         ],
     },
     {
@@ -404,9 +404,9 @@ const questions = [
         title: 'Seberapa sering Anda melakukan pewarnaan / bleaching?',
         description: 'Warna & bleaching dapat membuat rambut kering/rapuh.',
         options: [
-            { label: 'Sering (>=6 bln)', tag: 'Color_Often', image: '/public/yes.png' },
-            { label: 'Kadang (6-12 bln)', tag: 'Color_Sometimes', image: '/public/yes.png' },
-            { label: 'Tidak pernah', tag: 'Color_No', image: '/public/no.png' },
+            { label: 'Sering (>=6 bln)', tag: 'Color_Often', image: '../../public/yes.png' },
+            { label: 'Kadang (6-12 bln)', tag: 'Color_Sometimes', image: '../../public/yes.png' },
+            { label: 'Tidak pernah', tag: 'Color_No', image: '../../public/no.png' },
         ],
     },
     {
@@ -414,9 +414,9 @@ const questions = [
         title: 'Apakah Anda mengikat rambut sangat ketat?',
         description: 'Ikat rambut ketat dapat menyebabkan kerontokan mekanis.',
         options: [
-            { label: 'Sering', tag: 'Tie_Yes', image: '/public/yes.png' },
-            { label: 'Kadang', tag: 'Tie_Sometimes', image: '/public/yes.png' },
-            { label: 'Tidak', tag: 'Tie_No', image: '/public/no.png' },
+            { label: 'Sering', tag: 'Tie_Yes', image: '../../public/yes.png' },
+            { label: 'Kadang', tag: 'Tie_Sometimes', image: '../../public/yes.png' },
+            { label: 'Tidak', tag: 'Tie_No', image: '../../public/no.png' },
         ],
     },
 
@@ -426,9 +426,9 @@ const questions = [
         title: 'Bagaimana pola makan Anda terkait nutrisi (protein/lemak sehat)?',
         description: 'Asupan nutrisi mempengaruhi kesehatan rambut.',
         options: [
-            { label: 'Seimbang', tag: 'Diet_Good', image: '/public/yes.png' },
-            { label: 'Kurang protein', tag: 'Diet_LowProtein', image: '/public/no.png' },
-            { label: 'Sering tidak teratur', tag: 'Diet_Poor', image: '/public/no.png' },
+            { label: 'Seimbang', tag: 'Diet_Good', image: '../../public/yes.png' },
+            { label: 'Kurang protein', tag: 'Diet_LowProtein', image: '../../public/no.png' },
+            { label: 'Sering tidak teratur', tag: 'Diet_Poor', image: '../../public/no.png' },
         ],
     },
     {
@@ -436,9 +436,9 @@ const questions = [
         title: 'Apakah Anda merasa stres berkepanjangan?',
         description: 'Stres dapat memicu kerontokan rambut.',
         options: [
-            { label: 'Ya, tinggi', tag: 'Stress_High', image: '/public/yes.png' },
-            { label: 'Kadang', tag: 'Stress_Mid', image: '/public/yes.png' },
-            { label: 'Tidak', tag: 'Stress_No', image: '/public/no.png' },
+            { label: 'Ya, tinggi', tag: 'Stress_High', image: '../../public/yes.png' },
+            { label: 'Kadang', tag: 'Stress_Mid', image: '../../public/yes.png' },
+            { label: 'Tidak', tag: 'Stress_No', image: '../../public/no.png' },
         ],
     },
     {
@@ -446,9 +446,9 @@ const questions = [
         title: 'Apa tujuan perawatan Anda sekarang?',
         description: 'Memudahkan rekomendasi: pertumbuhan, perbaikan, hidrasi.',
         options: [
-            { label: 'Mengurangi rontok / memperbaiki', tag: 'Goal_Growth', image: '/public/dandruff.png' },
-            { label: 'Memperbaiki kerusakan & bercabang', tag: 'Goal_Repair', image: '/public/hair-care.png' },
-            { label: 'Menambah kilau & hidrasi', tag: 'Goal_Shine', image: '/public/kering.png' },
+            { label: 'Mengurangi rontok / memperbaiki', tag: 'Goal_Growth', image: '../../public/dandruff.png' },
+            { label: 'Memperbaiki kerusakan & bercabang', tag: 'Goal_Repair', image: '../../public/hair-care.png' },
+            { label: 'Menambah kilau & hidrasi', tag: 'Goal_Shine', image: '../../public/kering.png' },
         ],
     },
 ]
