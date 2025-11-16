@@ -11,9 +11,15 @@ const router = createRouter({
     },
     {
       path: '/questionnare',
-      name: 'about',
+      name: 'question',
       component: () => import('../views/QuestionView.vue'),
     },
+   {
+  path: '/result-questionnare',
+  name: 'result',
+  component: () => import('../views/ResutlView.vue'),
+},
+
   ],
 })
 
