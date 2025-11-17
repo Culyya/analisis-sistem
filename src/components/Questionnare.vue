@@ -1,7 +1,7 @@
 <template>
     <LoadingScreen />
     <div
-        class="relative h-screen overflow-auto [-ms-overflow-style:none] [scrollbar-width:none] font-poppins bg-gray-100">
+        class="relative h-screen overflow-auto [-ms-overflow-style:none] [scrollbar-width:none] font-poppins bg-purple-600 sm:bg-white">
 
         <div class="mx-auto">
             <div class="flex flex-col lg:flex-row h-auto lg:h-screen">
@@ -133,6 +133,7 @@
 
 
 
+
                         <!-- OPTIONS -->
                         <div class="pt-10 ">
                             <!-- IF TEXT INPUT -->
@@ -146,29 +147,17 @@
                             <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
                                 <button v-for="(opt, i) in currentQuestion.options" :key="i" @click="selectOption(opt)"
                                     :class="[
-                                        'p-5 rounded-2xl border-2 transition-all bg-white duration-200 text-left flex flex-col justify-between h-full shadow-sm',
+                                        'p-5 rounded-2xl transition-all border bg-white duration-200 text-left flex flex-col justify-between h-full shadow-sm',
                                         isSelected(opt)
-                                            ? 'border-purple-800 bg-white'
-                                            : 'border-purple-500 bg-white hover:bg-gray-50'
+                                            ? 'border-yellow-400 border-4'
+                                            : 'border-purple-400 hover:bg-gray-50'
                                     ]">
-
-                                    <div>
-                                        <div
-                                            class="pt-3 text-lg flex flex-col items-center font-semibold text-gray-800">
-                                            <img v-if="opt.image" :src="opt.image" class="h-22 pb-4" alt="" />
-                                            <span class="text-center">{{ opt.label }}</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex items-center justify-end">
-                                        <svg v-if="isSelected(opt)" xmlns="http://www.w3.org/2000/svg"
-                                            class="h-6 w-6 text-purple-800" fill="none" viewBox="0 0 24 24"
-                                            stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M5 13l4 4L19 7" />
-                                        </svg>
+                                    <div class="pt-3 text-lg flex flex-col items-center font-semibold text-gray-800">
+                                        <img v-if="opt.image" :src="opt.image" class="h-22 pb-4" alt="" />
+                                        <span class="text-center">{{ opt.label }}</span>
                                     </div>
                                 </button>
+
                             </div>
                         </div>
 
@@ -489,8 +478,9 @@ function pad(n) {
 }
 
 function isSelected(opt) {
-    return selections[currentQuestionIndex.value] === opt
+    return selections[currentQuestionIndex.value]?.tag === opt.tag
 }
+
 
 function selectOption(opt) {
     // Simpan pilihan
@@ -540,9 +530,15 @@ function next() {
     // Ini dijalankan HANYA jika benar-benar last question
     const result = analyzeHair(selections)
     router.push({
-        name: 'result',
-        query: { data: JSON.stringify(result) }
-    })
+    name: 'result',
+    query: { 
+        data: JSON.stringify(result),
+        name: name.value,
+        gender: gender.value,
+        age: age.value
+    }
+})
+
 }
 
 
